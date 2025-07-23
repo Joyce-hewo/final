@@ -39,7 +39,7 @@ For the word: CLOUDED LEOPARD
 ## Running this Project
 
 1. Download or clone this repository and place it on your Jetson or development machine.
-2. Ensure your image classification script (`imagenet.py`) and ONNX model are functional.
+2. Ensure your image classification script and ONNX model are functional.
 3. Set up your environment:
  ```
  pip3 install flask openai numpy==1.24.4
