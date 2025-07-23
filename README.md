@@ -48,9 +48,9 @@ python3 app.py
 6. Open the link to the Web UI in your browser (usually appears in your terminal or bottom corner).
 7. Upload a sample image via the “Choose File” button.
 8. Click the Classify Image button to start the two-part process:
-9. Machine 1 classifies the image
-10. Machine 2 generates translation + recommendations + facts
-11. The result will be displayed on screen:
+- Machine 1 classifies the image
+- Machine 2 generates translation + recommendations + facts
+9. The result will be displayed on screen:
 - The image
 - Classification label and confidence
 - Chinese translation
