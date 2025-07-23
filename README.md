@@ -9,18 +9,19 @@ A Flask web app for image classification and AI-powered enrichment using Jetson 
 This project uses a two-part AI system to analyze images and generate meaningful linguistic content based on what’s identified in the image:
 
 - **Machine 1**: An image classification system powered by Jetson Inference and a ResNet18 ONNX model. It identifies the object in the image and outputs a class label with a confidence score. Example:
-imagenet.py
+```imagenet.py
 --model=$NET/resnet18.onnx
 --labels=$DATASET/labels.txt
 --input_blob=input_0
 --output_blob=output_0
 $DATASET/test/CLOUDED_LEOPARD/3.jpg output.jpg
-
+```
 Output:
+```
 [image] loaded '.../CLOUDED_LEOPARD/3.jpg' (224x224, 3 channels)
 imagenet: 78.51% class #4 (CLOUDED LEOPARD)
 [image] saved 'output.jpg' (224x224, 3 channels)
-
+```
 - **Machine 2**: A language processing module that sends the identified class (e.g., “Clouded Leopard”) to a prompt using the OpenAI API. The prompt format is:
 "You are a helpful assistant that:
 1. Translates English words to Chinese
