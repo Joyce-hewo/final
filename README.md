@@ -1,6 +1,8 @@
-#Classilate
+### Classilate
+
 <img width="600" height="600" alt="ChatGPT Image 2025年7月23日 11_09_51" src="https://github.com/user-attachments/assets/a6dde061-6e3c-4976-ab1f-0375d5053647" />
 A Flask web app for image classification and AI-powered enrichment using Jetson and OpenAI's language model. Classilate takes an image, classifies its content using an ONNX image model, then translates the result to Chinese and recommends relevant media using the OpenAI API.
+
 ## The Algorithm
 
 This project uses a two-part AI system to analyze images and generate meaningful linguistic content based on what’s identified in the image:
@@ -36,7 +38,7 @@ For the word: CLOUDED LEOPARD
 2. Ensure your image classification script (`imagenet.py`) and ONNX model are functional.
 3. Set up your environment:
  ```bash
- pip3 install flask openai numpy==1.24.4
+ pip3 install flask openai numpy==1.24.4```
 4. Export your OpenAI API key:
 export OPENAI_API_KEY=your-api-key-here
 5. Run the app:
