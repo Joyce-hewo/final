@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hewo</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required />
+        <button type="submit">Classify & Recommend</button>
+    </form>
+
+    {% if label %}
+    <h2>Classification Result:</h2>
+    <p><strong>{{ label }}</strong></p>
+
+    <h2>Recommendations:</h2>
+    <pre>{{ recommendations }}</pre>
+    {% endif %}
+</body>
+</html>
