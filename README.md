@@ -1,6 +1,6 @@
 # Classilate
 
-<img width="600" height="600" alt="ChatGPT Image 2025年7月23日 11_09_51" src="https://github.com/user-attachments/assets/a6dde061-6e3c-4976-ab1f-0375d5053647" />
+<img width="300" height="300" alt="ChatGPT Image 2025年7月23日 11_09_51" src="https://github.com/user-attachments/assets/a6dde061-6e3c-4976-ab1f-0375d5053647" />
 
 A Flask web app for image classification and AI-powered enrichment using Jetson and OpenAI's language model. Classilate takes an image, classifies its content using an ONNX image model, then translates the result to Chinese and recommends relevant media using the OpenAI API.
 
